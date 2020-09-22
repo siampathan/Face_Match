@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACE MATCH</title>
+    <link rel="stylesheet" href="tet.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/title.png">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body> 
+  <div id="back_Img"></div>
+  <h1 id="write_">Do you know who look like you ? Check below</h1> 
+  <input type="text" id="input" placeholder="Enter your name">
+    <!--gender section --->
+    <div id="gender">
+    <label for="text">Gender : </label>
+   <label for="text" id="male_">Male</label>
+   <input type="checkbox" id="male" class="pon">
+   <label for="text" id="female_">Female</label>
+   <input type="checkbox" id="female" class="pon"> 
+  </div>
+   <!---button-->
+   <button id="button">Watch</button>
+   <!--- Upload photo part-->
+   <div class="center">
+    <div class="form-input">
+      <label for="file-ip-1">Upload Image</label>
+      <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+      <div class="preview">
+        <img id="file-ip-1-preview">
+      </div>
+    </div>
+  </div>
+  <!---random name show-->
+   <!--- result show part-->
+   <div id="name_Show"></div>
+   <div id="show_1"></div> 
+   <div id="show_2"></div>
+   <div id="show_3"></div>
+   <div id="size_Photo">
+   <div id="photo_1"></div>
+  </div>
+   <div id="photo_2"></div>
+    <script src="tet_.js"></script>
+</body>
+</html>
